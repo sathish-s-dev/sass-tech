@@ -18,7 +18,7 @@ export default function Header() {
 
 	return (
 		<nav
-			className={`text-slate-100 pb-5 md:text-sm ${
+			className={`text-slate-800 dark:text-slate-100 pb-5 md:text-sm ${
 				state
 					? 'shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0'
 					: ''
@@ -39,7 +39,7 @@ export default function Header() {
 					</Link>
 					<div className='md:hidden'>
 						<button
-							className='menu-btn text-slate-200 hover:text-gray-200/80'
+							className='menu-btn text-slate-700 hover:text-slate-700/80 dark:text-slate-200 hover:dark:text-slate-200/80'
 							onClick={() => setState(!state)}>
 							{state ? (
 								<svg
@@ -80,7 +80,7 @@ export default function Header() {
 							return (
 								<li
 									key={idx}
-									className='text-slate-100 hover:text-gray-100/80'>
+									className='dark:text-slate-100 text-slate-700 hover:text-slate-700/80 hover:dark:text-slate-100/80'>
 									<a
 										href={item.path}
 										className='block'>
@@ -93,7 +93,7 @@ export default function Header() {
 					<div className='flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0'>
 						<Link
 							href='/sign-in'
-							className='block text-gray-100 hover:text-gray-100/80'>
+							className='block dark:text-gray-100 text-slate-700 hover:text-slate-700 dark:hover:text-gray-100/80'>
 							Log in
 						</Link>
 						<Link

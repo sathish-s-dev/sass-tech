@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 export default function SignIn() {
 	return (
-		<div className='flex-1'>
+		<div className='flex-1 py-6 md:py-14' >
 			<Card className='mx-auto max-w-sm backdrop:blur-md items-center'>
 				<CardHeader className='space-y-1'>
 					<CardTitle className='text-2xl'>Log In</CardTitle>

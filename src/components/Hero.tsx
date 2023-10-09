@@ -27,6 +27,7 @@ export function CallToAction() {
 	);
 }
 
+import Link from 'next/link';
 import PopupVideo from './PopupVideo';
 
 export const Hero = () => {
@@ -83,7 +84,7 @@ export const Hero = () => {
 
 	return (
 		<section>
-			<div className='max-w-screen-xl mx-auto px-4 py-28 gap-12 dark:text-slate-300 md:px-8 xl:flex'>
+			<div className='max-w-screen-xl mx-auto px-4 py-6 md:py-28 gap-12 text-slate-700 dark:text-slate-300 md:px-8 xl:flex'>
 				<div className='space-y-5 max-w-2xl mx-auto text-center xl:text-left'>
 					<div className='flex flex-wrap items-center justify-center gap-6 xl:justify-start'>
 						{features.map((item, idx) => (
@@ -95,15 +96,15 @@ export const Hero = () => {
 							</div>
 						))}
 					</div>
-					<h1 className='text-4xl text-slate-100 font-extrabold mx-auto md:text-5xl'>
+					<h1 className='text-4xl dark:text-slate-100 font-extrabold mx-auto md:text-5xl'>
 						Explore in-demand careers and develop cutting edge skills
 					</h1>
-					<p className='max-w-xl mx-auto xl:mx-0'>
+					<p className='max-w-xl mx-auto xl:mx-0 text-slate-500'>
 						Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
 						doloremque laudantium, totam rem aperiam, eaque ipsa quae.
 					</p>
 					<div className='items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 xl:justify-start'>
-						<a
+						<Link
 							href='javascript:void(0)'
 							className='flex items-center justify-center gap-x-2 py-2 px-4 text-white font-medium bg-slate-800 duration-150 hover:bg-slate-700 active:bg-slate-900 rounded-lg md:inline-flex'>
 							Browse courses
@@ -118,10 +119,10 @@ export const Hero = () => {
 									clipRule='evenodd'
 								/>
 							</svg>
-						</a>
-						<a
+						</Link>
+						<Link
 							href='javascript:void(0)'
-							className='flex items-center justify-center gap-x-2 py-2 px-4 text-slate-300 hover:text-slate-300/80 font-medium duration-150 active:bg-slate-100 border rounded-lg md:inline-flex'>
+							className='flex items-center justify-center gap-x-2 py-2 px-4 dark:text-slate-300 dark:hover:text-slate-300/80 font-medium duration-150 hover:bg-slate-700 hover:text-slate-100 active:bg-slate-900 border rounded-lg md:inline-flex'>
 							Get access
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -134,7 +135,7 @@ export const Hero = () => {
 									clipRule='evenodd'
 								/>
 							</svg>
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className='flex-1 max-w-xl mx-auto mt-14 xl:mt-0'>

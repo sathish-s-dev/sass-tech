@@ -3,9 +3,9 @@ import { features } from '@/constants/features';
 export const Features = () => {
 	return (
 		<section className='py-14 bg-gradient-radial'>
-			<div className='max-w-screen-xl mx-auto px-4 text-center text-gray-200/80 md:px-8'>
+			<div className='max-w-screen-xl mx-auto px-4 text-center text-slate-600 dark:text-slate-200/80 md:px-8'>
 				<div className='max-w-2xl mx-auto'>
-					<h3 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
+					<h3 className='text-slate-800 text-3xl font-semibold sm:text-4xl'>
 						The fastest way to launch a product
 					</h3>
 					<p className='mt-3'>
@@ -22,7 +22,7 @@ export const Features = () => {
 								<div className='w-12 h-12 mx-auto bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center'>
 									{item.icon}
 								</div>
-								<h4 className='text-lg text-gray-800 font-semibold'>
+								<h4 className='text-lg text-slate-700 font-bold'>
 									{item.title}
 								</h4>
 								<p>{item.desc}</p>
