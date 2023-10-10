@@ -29,7 +29,7 @@ export default function Footer1() {
 	];
 
 	return (
-		<footer className='dark:text-slate-100 text-center text-slate-600 px-4 py-5 max-w-screen-xl mx-auto md:px-8'>
+		<footer className='dark:text-slate-100 text-center text-slate-600 px-4 py-5 w-full mx-auto flex flex-col items-center md:px-8 border-t border-slate-600'>
 			<div className='max-w-lg sm:mx-auto sm:text-center'>
 				<Link
 					href='/'
@@ -48,7 +48,7 @@ export default function Footer1() {
 					since the 1500s.
 				</p>
 			</div>
-			<ul className='items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0'>
+			<ul className='items-center justify-center mt-3 space-y-5 sm:flex sm:space-x-4 sm:space-y-0'>
 				{footerNavs.map((item, idx) => (
 					<li
 						key={idx}
@@ -61,7 +61,7 @@ export default function Footer1() {
 					</li>
 				))}
 			</ul>
-			<div className='mt-8 items-center justify-between sm:flex'>
+			<div className='mt-4 items-center max-w-5xl w-full justify-between sm:flex'>
 				<div className='mt-4 sm:mt-0'>
 					&copy; 2022 Float UI All rights reserved.
 				</div>
